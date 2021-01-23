@@ -23,9 +23,9 @@
 }
 
 .chat-container {
-    text-align: center;
     margin: 0 auto;
     max-width: 50em;
+    display: fixed;
 }
 
 .header {
@@ -71,4 +71,21 @@
     overflow-y: scroll;
     padding: .5em;
     // display: none;
+}
+
+df-messenger {
+    height: 300px;
+    max-height: 90%;
+    min-height: 30%;
+}
+
+df-messenger {
+    --df-messenger-bot-message: #878fac;
+    --df-messenger-button-titlebar-color: rgb(119, 23, 90);
+    --df-messenger-chat-background-color: #fafafa;
+    --df-messenger-font-color: white;
+    --df-messenger-send-icon: #878fac;
+    --df-messenger-user-message: #479b3d;
+    --df-messenger-input-box-color: white;
+    --df-messenger-input-placeholder-font-color: white;
 }
