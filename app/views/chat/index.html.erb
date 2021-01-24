@@ -1,27 +1,9 @@
-<%# <div class="chat-container">
-<div class="chat">
-  <div class="messages">
-    <div class="message">
-      <span class="bot">Warmbot: </span> Hi, this is Warmbot, a safe space for anything you have to say, 
-      completely anonymous, and no judgement.
-    </div>
-  </div>
-  <div class="extra content">
-      <form class="ui reply form">
-          <div class="field">
-              <div class="ui fluid icon input">
-                  <input type="text" id="message" placeholder="Enter a message...">
-                  <i class="bordered inverted pink send icon"></i>
-              </div>
-          </div>
-      </form>
-  </div> %>
 <div class="chat-container">
   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
   <df-messenger
   chat-icon="https:&#x2F;&#x2F;storage.googleapis.com&#x2F;cloudprod-apiai&#x2F;0b28fd5f-bccf-46d4-8750-4fb2a5363071_x.png"
   intent="FACEBOOK_WELCOME"
-  chat-title="Warmline"
+  chat-title="Warm.line"
   chat-icon="https://upload.wikimedia.org/wikipedia/commons/4/48/BLANK_ICON.png"
   agent-id="8eac1803-f8ff-4132-aeaa-aa2b7a60d214"
   language-code="en"
@@ -31,16 +13,17 @@
 </div>
 
 <script>
-function() {
+function placeholder() {
   elem = document.querySelector("df-messenger").shadowRoot.querySelector("df-messenger-chat").shadowRoot.querySelector("df-messenger-user-input");
   elem2 = elem.shadowRoot.querySelector(".input-box-wrapper > input").placeholder;
-  elem2 = "New Placeholder";
+  elem2 = "Type here ...";
+}
 </script>
 
 <script>
 
   $(document).ready(function() {
-  
+
     window.addEventListener('dfMessengerLoaded', function (event) {
         $r1 = document.querySelector("df-messenger");
         $r2 = $r1.shadowRoot.querySelector("df-messenger-chat");
@@ -55,13 +38,16 @@ function() {
         $('#widgetIcon').css('display', 'none');
   
     });
-  });
+
+    const dfMessenger = document.querySelector('df-messenger');
+    dfMessenger.addEventListener('df-user-input-entered', function (event) {
+      console.log('df-user-input-entered', event.detail.input);
+    });
+
+});
   
 </script>
 
 <script>
-  const dfMessenger = document.querySelector('df-messenger');
-  dfMessenger.addEventListener('event-type', function (event) {
-    console.log("here", event);
-  });
+  
 </script>
