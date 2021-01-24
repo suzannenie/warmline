@@ -65,7 +65,7 @@
   <div class="eight wide column">
     <div class="ui fluid category search">
         <div class="ui fluid icon input">
-            <input class="prompt" type="text" placeholder="Search ...">
+            <input class="prompt" id="search" type="text" placeholder="Search ...">
             <i class="search icon"></i>
         </div>
     </div>
@@ -73,171 +73,179 @@
 </div>
 <br>
 <div id="results">
-    <div id="CA">
-    <table class="ui celled table">
-        <thead>
-            <tr><th>Organization</th>
-            <th>Website</th>
-            <th>Phone Number</th>
-        </tr></thead>
-        <tbody>
-            <tr>
-            <td data-label="Org">Teen Line</td>
-            <td data-label="Website"><a href="https://teenlineonline.org/">https://teenlineonline.org/</a></td>
-            <td data-label="Phone">1-310-855-HOPE (4673) <br>1-800-TLC-TEEN (852-8336)</td>
-            </tr>
-            <tr>
-            <td data-label="Org">Project Return Peer Support Network</td>
-            <td data-label="Website"><a href="http://www.prpsn.org">www.prpsn.org</a></td>
-            <td data-label="Phone">(888) 448-9777 English<br>(888) 448-4055 Spanish</td>
-            </tr>
-            <tr>
-            <td data-label="Org">The National Eating Disorder Association</td>
-            <td data-label="Website"><a href="https://www.nationaleatingdisorders.org/" target="_blank" rel="noopener noreferrer">https://www.nationaleatingdisorders.org/</a></td>
-            <td data-label="Phone">1-800-931-2237</td>
-            </tr>
-            <tr class="CA">
-            <td data-label="Org">NAMI Santa Clara County</td>
-            <td data-label="Website"><a href="https://www.namisantaclara.org">www.namisantaclara.org</a></td>
-            <td data-label="Phone">(408) 453-0400</td>
-            </tr>
-            <tr>
-            <td data-label="Org">Western Mass RLC Peer Support Line</td>
-            <td data-label="Website"><a href="http://www.westernmassrlc.org/peer-support-line"> Western Mass Peer Support Line Website</a></td>
-            <td data-label="Phone">(888) 407-4515</td>
-            </tr>
-            <tr>
-            <td data-label="Org">Mental Health Minnesota Warmline</td>
-            <td data-label="Website"><a href="https://mentalhealthmn.org/">https://mentalhealthmn.org/</a></td>
-            <td data-label="Phone">877.404.3190.</td>
-            </tr>
-            <tr>
-            <td data-label="Org">NAMI Missouri Warmline</td>
-            <td data-label="Website"></td>
-            <td data-label="Phone">Local: 573-624-7727<br>Toll Free: 800-374-2138</td>
-            </tr>
-            <tr>
-            <td data-label="Org">The Recovery Village</td>
-            <td data-label="Website"><a href="https://www.therecoveryvillage.com/" target="_blank" rel="noopener noreferrer">https://www.therecoveryvillage.com/</a></td>
-            <td data-label="Phone">352-771-2700</td>
-            </tr>
-            <tr>
-            <td data-label="Org">The National Alliance on Mental Illness (NAMI)</td>
-            <td data-label="Website"><a href="https://nami.org/HomeHome" target="_blank" rel="noopener noreferrer">https://nami.org/HomeHome</a></td>
-            <td data-label="Phone">1-800-950-NAMI (6264) <br>Text “NAMI” to 741-741</td>
-            </tr>
-            <tr class="CA">
-            <td data-label="Org">Mental Health Association of San Francisco</td>
-            <td data-label="Website"><a href="https://www.mentalhealthsf.org/peer-run-warmline/">https://www.mentalhealthsf.org/peer-run-warmline/</a></td>
-            <td data-label="Phone">855-845-7415</td>
-            </tr>
-            <tr>
-            <td data-label="Org">Central Missouri crisis number</td>
-            <td data-label="Website"></td>
-            <td data-label="Phone">1-800-833-3915</td>
-            </tr>
-            
-            <tr class="CA">
-            <td data-label="Org">NAMI San Diego</td>
-            <td data-label="Website"><a href="https://namisandiego.org/helpline/">https://namisandiego.org/helpline/</a></td>
-            <td data-label="Phone">(619) 543-1434</td>
-            </tr>
-            <tr>
-            <td data-label="Org">Peer Return Network</td>
-            <td data-label="Website"><a href="http://prpsn.org/support-during-covid-19/">http://prpsn.org/support-during-covid-19/</a></td>
-            <td data-label="Phone">Call 1-800-931-2237</td>
-            </tr>
-            <tr class="CA">
-            <td data-label="Org">NAMI Orange County</td>
-            <td data-label="Website"><a href="https://www.ochealthinfo.com/bhs/about/pi/crisis/warmline">https://www.ochealthinfo.com/bhs/about/pi/crisis/warmline</a></td>
-            <td data-label="Phone">877-910-WARM</td>
-            </tr>
-            <tr class="CA">
-            <td data-label="Org">211LA</td>
-            <td data-label="Website"><a href="https://www.211la.org/resources/site/california-peer-run-warm-line">https://www.211la.org/resources/site/california-peer-run-warm-line</a></td>
-            <td data-label="Phone">(855) 845-7415</td>
-            </tr>
-            <tr class="CA">
-            <td data-label="Org">Turlock Point Community Programs</td>
-            <td data-label="Website"><a href="www.tpcp.org">www.tpcp.org</a></td>
-            <td data-label="Phone">209-558-4600</td>
-            </tr>
-            <tr class="CA">
-            <td data-label="Org">Turlock Point Community Programs</td>
-            <td data-label="Website"><a href="www.tpcp.org">www.tpcp.org</a></td>
-            <td data-label="Phone">209-558-4600</td>
-            </tr>
-            <tr>
-            <td data-label="Org">Association for mental health and wellness peer support line</td>
-            <td data-label="Website"><a href="http://mhaw.org/programs/peer-support-line/">http://www.mhaw.org/programs/peer-support-line</a></td>
-            <td data-label="Phone">631-471-7242 ext. 1217</td>
-            </tr>
-            <tr>
-            <td data-label="Org">Mha-ne.org</td>
-            <td data-label="Website"><a href="https://mha-ne.org/programs-services/keya.html">https://mha-ne.org/programs-services/keya.html</a></td>
-            <td data-label="Phone">Keya Warmline: (402)261-5959 (24X7)</td>
-            </tr>
-            <tr class="PA">
-            <td data-label="Org">PHMCA Virtual Warmline via Zoom</td>
-            <td data-label="Website"><a href="https:/pmhca.wildapricot.org/pmhca-Virtual-Warm-Line">PMHCA Virtual Warmline webpage</a></td>
-            <td data-label="Phone"><a href="https://zoom.us/j/99026924170">(646) 558-8656 meeting id# 99026924170 (Click here to enter Zoom meeting)<br></a></td>
-            </tr>
-            <tr class="CA">
-            <td data-label="Org">Northern Valley Talk Line</td>
-            <td data-label="Website"><a href="https://nvcss.org/butte/nvtl">https://nvcss.org/butte/nvtl</a></td>
-            <td data-label="Phone">Toll Free: 1-855-582-5554</td>
-            </tr>
-            <tr class="CA">
-            <td data-label="Org">Kunle Community Warm Line of Humboldt County</td>
-            <td data-label="Website"><a href="https://www.kunlecommunity.org">https://www.kunlecommunity.org</a></td>
-            <td data-label="Phone">(707) 599-2381</td>
-            </tr>
-            <tr class="CO">
-            <td data-label="Org">Rocky Mountain Crisis Partner peer line</td>
-            <td data-label="Website"></td>
-            <td data-label="Phone">1 844-493-8255 </td>
-            </tr>
-            <tr class="PA">
-            <td data-label="Org">Warmline - Family Answers</td>
-            <td data-label="Website"><a href="http://www.familyanswers.org/prgm_warmline.html">http://www.familyanswers.org/prgm_warmline.html</a></td>
-            <td data-label="Phone">(610) 820-8451<br>or (610) 820-8549</td>
-            </tr>
-            <tr class="PA">
-            <td data-label="Org">WARM LINE/Seven Mountains WARM LINE - The Advocacy Alliance</td>
-            <td data-label="Website"><a href="http://theadvocacyalliance.org/programs-and-services/warm-lines/">http://theadvocacyalliance.org/programs-and-services/warm-lines/</a></td>
-            <td data-label="Phone">(866) 654-8114</td>
-            </tr>
-            <tr class="PA">
-            <td data-label="Org">Warmline - The NHS Stevens Center</td>
-            <td data-label="Website"></td>
-            <td data-label="Phone">(877) 243-7153 </td>
-            </tr>
-            
-            <tr class="PA">
-            <td data-label="Org">Allegheney County Warmline</td>
-            <td data-label="Website"></td>
-            <td data-label="Phone">866-661-9276</td>
-            </tr>
-            <tr class="PA">
-            <td data-label="Org">Peer Support Talk Line - Serving Montgomery County</td>
-            <td data-label="Website"><a href="www.accessservices.org">www.accessservices.org</a></td>
-            <td data-label="Phone">1-855-715-TALK</td>
-            </tr>
-            <tr class="PA">
-            <td data-label="Org">Warm Line - The Grapevine Center</td>
-            <td data-label="Website"><a href="http://grapevinecenter.org/warm-line/">http://grapevinecenter.org/warm-line/</a></td>
-            <td data-label="Phone">Local: (724)-431-2488<br>Toll Free: 1-866-431-2489</td>
-            </tr>
-            <tr class="PA">
-            <td data-label="Org">Philadelphia Warmline</td>
-            <td data-label="Website"></td>
-            <td data-label="Phone">855-507-9276<br>(267) 507-3945</td>
-            </tr>
-            
-            
-        </tbody>
-        </table>
-    </div>
+  <table class="ui celled table">
+      <thead>
+          <tr><th>Organization</th>
+          <th>Website</th>
+          <th>Phone Number</th>
+      </tr></thead>
+      <tbody>
+          <tr>
+          <td data-label="Org">Teen Line</td>
+          <td data-label="Website"><a href="https://teenlineonline.org/">https://teenlineonline.org/</a></td>
+          <td data-label="Phone">1-310-855-HOPE (4673) <br>1-800-TLC-TEEN (852-8336)</td>
+          </tr>
+          <tr>
+          <td data-label="Org">Project Return Peer Support Network</td>
+          <td data-label="Website"><a href="http://www.prpsn.org">www.prpsn.org</a></td>
+          <td data-label="Phone">(888) 448-9777 English<br>(888) 448-4055 Spanish</td>
+          </tr>
+          <tr>
+          <td data-label="Org">The National Eating Disorder Association</td>
+          <td data-label="Website"><a href="https://www.nationaleatingdisorders.org/" target="_blank" rel="noopener noreferrer">https://www.nationaleatingdisorders.org/</a></td>
+          <td data-label="Phone">1-800-931-2237</td>
+          </tr>
+          <tr class="CA">
+          <td data-label="Org">NAMI Santa Clara County</td>
+          <td data-label="Website"><a href="https://www.namisantaclara.org">www.namisantaclara.org</a></td>
+          <td data-label="Phone">(408) 453-0400</td>
+          </tr>
+          <tr>
+          <td data-label="Org">Western Mass RLC Peer Support Line</td>
+          <td data-label="Website"><a href="http://www.westernmassrlc.org/peer-support-line"> Western Mass Peer Support Line Website</a></td>
+          <td data-label="Phone">(888) 407-4515</td>
+          </tr>
+          <tr>
+          <td data-label="Org">Mental Health Minnesota Warmline</td>
+          <td data-label="Website"><a href="https://mentalhealthmn.org/">https://mentalhealthmn.org/</a></td>
+          <td data-label="Phone">877.404.3190.</td>
+          </tr>
+          <tr>
+          <td data-label="Org">NAMI Missouri Warmline</td>
+          <td data-label="Website"></td>
+          <td data-label="Phone">Local: 573-624-7727<br>Toll Free: 800-374-2138</td>
+          </tr>
+          <tr>
+          <td data-label="Org">The Recovery Village</td>
+          <td data-label="Website"><a href="https://www.therecoveryvillage.com/" target="_blank" rel="noopener noreferrer">https://www.therecoveryvillage.com/</a></td>
+          <td data-label="Phone">352-771-2700</td>
+          </tr>
+          <tr>
+          <td data-label="Org">The National Alliance on Mental Illness (NAMI)</td>
+          <td data-label="Website"><a href="https://nami.org/HomeHome" target="_blank" rel="noopener noreferrer">https://nami.org/HomeHome</a></td>
+          <td data-label="Phone">1-800-950-NAMI (6264) <br>Text “NAMI” to 741-741</td>
+          </tr>
+          <tr class="CA">
+          <td data-label="Org">Mental Health Association of San Francisco</td>
+          <td data-label="Website"><a href="https://www.mentalhealthsf.org/peer-run-warmline/">https://www.mentalhealthsf.org/peer-run-warmline/</a></td>
+          <td data-label="Phone">855-845-7415</td>
+          </tr>
+          <tr>
+          <td data-label="Org">Central Missouri crisis number</td>
+          <td data-label="Website"></td>
+          <td data-label="Phone">1-800-833-3915</td>
+          </tr>
+          
+          <tr class="CA">
+          <td data-label="Org">NAMI San Diego</td>
+          <td data-label="Website"><a href="https://namisandiego.org/helpline/">https://namisandiego.org/helpline/</a></td>
+          <td data-label="Phone">(619) 543-1434</td>
+          </tr>
+          <tr>
+          <td data-label="Org">Peer Return Network</td>
+          <td data-label="Website"><a href="http://prpsn.org/support-during-covid-19/">http://prpsn.org/support-during-covid-19/</a></td>
+          <td data-label="Phone">Call 1-800-931-2237</td>
+          </tr>
+          <tr class="CA">
+          <td data-label="Org">NAMI Orange County</td>
+          <td data-label="Website"><a href="https://www.ochealthinfo.com/bhs/about/pi/crisis/warmline">https://www.ochealthinfo.com/bhs/about/pi/crisis/warmline</a></td>
+          <td data-label="Phone">877-910-WARM</td>
+          </tr>
+          <tr class="CA">
+          <td data-label="Org">211LA</td>
+          <td data-label="Website"><a href="https://www.211la.org/resources/site/california-peer-run-warm-line">https://www.211la.org/resources/site/california-peer-run-warm-line</a></td>
+          <td data-label="Phone">(855) 845-7415</td>
+          </tr>
+          <tr class="CA">
+          <td data-label="Org">Turlock Point Community Programs</td>
+          <td data-label="Website"><a href="www.tpcp.org">www.tpcp.org</a></td>
+          <td data-label="Phone">209-558-4600</td>
+          </tr>
+          <tr class="CA">
+          <td data-label="Org">Turlock Point Community Programs</td>
+          <td data-label="Website"><a href="www.tpcp.org">www.tpcp.org</a></td>
+          <td data-label="Phone">209-558-4600</td>
+          </tr>
+          <tr>
+          <td data-label="Org">Association for mental health and wellness peer support line</td>
+          <td data-label="Website"><a href="http://mhaw.org/programs/peer-support-line/">http://www.mhaw.org/programs/peer-support-line</a></td>
+          <td data-label="Phone">631-471-7242 ext. 1217</td>
+          </tr>
+          <tr>
+          <td data-label="Org">Mha-ne.org</td>
+          <td data-label="Website"><a href="https://mha-ne.org/programs-services/keya.html">https://mha-ne.org/programs-services/keya.html</a></td>
+          <td data-label="Phone">Keya Warmline: (402)261-5959 (24X7)</td>
+          </tr>
+          <tr class="PA">
+          <td data-label="Org">PHMCA Virtual Warmline via Zoom</td>
+          <td data-label="Website"><a href="https:/pmhca.wildapricot.org/pmhca-Virtual-Warm-Line">PMHCA Virtual Warmline webpage</a></td>
+          <td data-label="Phone"><a href="https://zoom.us/j/99026924170">(646) 558-8656 meeting id# 99026924170 (Click here to enter Zoom meeting)<br></a></td>
+          </tr>
+          <tr class="CA">
+          <td data-label="Org">Northern Valley Talk Line</td>
+          <td data-label="Website"><a href="https://nvcss.org/butte/nvtl">https://nvcss.org/butte/nvtl</a></td>
+          <td data-label="Phone">Toll Free: 1-855-582-5554</td>
+          </tr>
+          <tr class="CA">
+          <td data-label="Org">Kunle Community Warm Line of Humboldt County</td>
+          <td data-label="Website"><a href="https://www.kunlecommunity.org">https://www.kunlecommunity.org</a></td>
+          <td data-label="Phone">(707) 599-2381</td>
+          </tr>
+          <tr class="CO">
+          <td data-label="Org">Rocky Mountain Crisis Partner peer line</td>
+          <td data-label="Website"></td>
+          <td data-label="Phone">1 844-493-8255 </td>
+          </tr>
+          <tr class="PA">
+          <td data-label="Org">Warmline - Family Answers</td>
+          <td data-label="Website"><a href="http://www.familyanswers.org/prgm_warmline.html">http://www.familyanswers.org/prgm_warmline.html</a></td>
+          <td data-label="Phone">(610) 820-8451<br>or (610) 820-8549</td>
+          </tr>
+          <tr>
+          <td data-label="Org">LGBT National Help Center</td>
+          <td data-label="Website"><a href="www.lgbthotline.org">www.lgbthotline.org</a></td>
+          <td data-label="Phone">1-877-356-9211</td>
+          </tr>
+          <tr>
+          <td data-label="Org">LGBTQIA National Alliance on Mental Illness</td>
+          <td data-label="Website"><a href="https://www.nami.org/Your-Journey/Identity-and-Cultural-Dimensions/LGBTQI">https://www.nami.org/Your-Journey/Identity-and-Cultural-Dimensions/LGBTQI</a></td>
+          <td data-label="Phone">800-950-NAMI</td>
+          </tr>
+          <tr class="PA">
+          <td data-label="Org">WARM LINE/Seven Mountains WARM LINE - The Advocacy Alliance</td>
+          <td data-label="Website"><a href="http://theadvocacyalliance.org/programs-and-services/warm-lines/">http://theadvocacyalliance.org/programs-and-services/warm-lines/</a></td>
+          <td data-label="Phone">(866) 654-8114</td>
+          </tr>
+          <tr class="PA">
+          <td data-label="Org">Warmline - The NHS Stevens Center</td>
+          <td data-label="Website"></td>
+          <td data-label="Phone">(877) 243-7153 </td>
+          </tr>
+          
+          <tr class="PA">
+          <td data-label="Org">Allegheney County Warmline</td>
+          <td data-label="Website"></td>
+          <td data-label="Phone">866-661-9276</td>
+          </tr>
+          <tr class="PA">
+          <td data-label="Org">Peer Support Talk Line - Serving Montgomery County</td>
+          <td data-label="Website"><a href="www.accessservices.org">www.accessservices.org</a></td>
+          <td data-label="Phone">1-855-715-TALK</td>
+          </tr>
+          <tr class="PA">
+          <td data-label="Org">Warm Line - The Grapevine Center</td>
+          <td data-label="Website"><a href="http://grapevinecenter.org/warm-line/">http://grapevinecenter.org/warm-line/</a></td>
+          <td data-label="Phone">Local: (724)-431-2488<br>Toll Free: 1-866-431-2489</td>
+          </tr>
+          <tr class="PA">
+          <td data-label="Org">Philadelphia Warmline</td>
+          <td data-label="Website"></td>
+          <td data-label="Phone">855-507-9276<br>(267) 507-3945</td>
+          </tr>
+          
+          
+      </tbody>
+      </table>
 </div>
 
 <script>
@@ -259,4 +267,19 @@ function getState() {
       $("#results tr").show();
     }
 };
+
+
+// search bar
+var $rows = $('#results tr');
+$('#search').keyup(function() {
+
+    var val = '^(?=.*\\b' + $.trim($(this).val()).split(/\s+/).join('\\b)(?=.*\\b') + ').*$',
+        reg = RegExp(val, 'i'),
+        text;
+
+    $rows.show().filter(function() {
+        text = $(this).text().replace(/\s+/g, ' ');
+        return !reg.test(text);
+    }).hide();
+});
 </script>
