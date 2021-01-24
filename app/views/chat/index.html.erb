@@ -31,7 +31,10 @@
 </div>
 
 <script>
-setTimeout(function(){document.querySelector("df-messenger").shadowRoot.querySelector("df-messenger-chat").shadowRoot.querySelector("df-messenger-user-input").shadowRoot.querySelector(".input-box-wrapper > input").placeholder="New placeholder text” }, 1000);
+function() {
+  elem = document.querySelector("df-messenger").shadowRoot.querySelector("df-messenger-chat").shadowRoot.querySelector("df-messenger-user-input");
+  elem2 = elem.shadowRoot.querySelector(".input-box-wrapper > input").placeholder;
+  elem2 = "New Placeholder";
 </script>
 
 <script>
@@ -46,24 +49,21 @@ setTimeout(function(){document.querySelector("df-messenger").shadowRoot.querySel
         $r3 = $r2.shadowRoot.querySelector("df-messenger-user-input"); //for other mods
   
         var sheet = new CSSStyleSheet;
-        sheet.replaceSync( `div.chat-wrapper[opened="true"] { height: 420px;
-        width: 650px; position: absolute; right: 300px; bottom: 50px;}`);
-  
-  
+        sheet.replaceSync( `div.chat-wrapper[opened="true"] { height: 70vh;
+        width: 57vw; position: absolute; right: 20vw; bottom: auto; top: -80vh;}`);
+
   
         $r2.shadowRoot.adoptedStyleSheets = [ sheet ];
-        // sheet.replaceSync( ' .df-messenger-wrapper { background-color: black; }');
-  
-        wrap = document.querySelector("df-messenger-wrapper");
-        // wrap.css('right', '80px;');
-        // wrap.css('background-color', 'black');
         $('#widgetIcon').css('display', 'none');
   
     });
   });
   
+</script>
+
+<script>
   const dfMessenger = document.querySelector('df-messenger');
   dfMessenger.addEventListener('event-type', function (event) {
-    console.log(event);
+    console.log("here", event);
   });
 </script>
